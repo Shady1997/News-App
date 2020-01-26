@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "944344641228",
+    "firebase_url": "https://egypt-news-8e8ac.firebaseio.com",
+    "project_id": "egypt-news-8e8ac",
+    "storage_bucket": "egypt-news-8e8ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944344641228:android:1d7b1e49b67133e1cddc69",
+        "android_client_info": {
+          "package_name": "com.graduationproject.egyptnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944344641228-9v5mkb39q1ccaprimn8m725g3223bo37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.graduationproject.egyptnews",
+            "certificate_hash": "5f5c2cdf95e0a279eb652d837c54289f884c9e98"
+          }
+        },
+        {
+          "client_id": "944344641228-r55uu78ombujm7hj637341k6lpq3359n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.graduationproject.egyptnews",
+            "certificate_hash": "9624154d0be4b69d33c56b2bc1a47f9c960dc798"
+          }
+        },
+        {
+          "client_id": "944344641228-k5q92m43ap95hb1ltau3gmginmlnk08a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKrDDwgqZXerPOgyi9d5MMlr4d2tRCA4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944344641228-k5q92m43ap95hb1ltau3gmginmlnk08a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

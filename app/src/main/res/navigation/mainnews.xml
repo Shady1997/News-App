@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainnews"
+    app:startDestination="@id/headNewsFragment">
+
+    <fragment
+        android:id="@+id/headNewsFragment"
+        android:name="com.graduationproject.egyptnews.views.fragments.mainNewsFragments.HeadNewsFragment"
+        android:label="fragment_head_news"
+        tools:layout="@layout/fragment_head_news" >
+        <action
+            android:id="@+id/action_headNewsFragment_to_detailsNewsFragment"
+            app:destination="@id/detailsNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsNewsFragment"
+        android:name="com.graduationproject.egyptnews.views.fragments.mainNewsFragments.DetailsNewsFragment"
+        android:label="fragment_details_news"
+        tools:layout="@layout/fragment_details_news" >
+        <action
+            android:id="@+id/action_detailsNewsFragment_to_showOnWebFragment"
+            app:destination="@id/showOnWebFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/showOnWebFragment"
+        android:name="com.graduationproject.egyptnews.views.fragments.mainNewsFragments.ShowOnWebFragment"
+        android:label="fragment_show_on_web"
+        tools:layout="@layout/fragment_show_on_web" >
+        <action
+            android:id="@+id/action_showOnWebFragment_to_headNewsFragment"
+            app:destination="@id/headNewsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+</navigation>

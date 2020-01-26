@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingLeft="@dimen/headnewspadding"
+    android:paddingTop="@dimen/headnewspadding"
+    android:paddingRight="@dimen/headnewspadding"
+    android:paddingBottom="@dimen/headnewspadding"
+    tools:context=".views.fragments.entryFragments.SplashFragment">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardBackgroundColor="@color/bg"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <com.tomer.fadingtextview.FadingTextView
+            android:id="@+id/tv_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center|start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:texts="@array/title"
+            app:timeout="200" />
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/tv_Title"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="50dp"-->
+        <!--        android:ellipsize="marquee"-->
+        <!--        android:focusable="true"-->
+        <!--        android:gravity="center|start"-->
+        <!--        android:marqueeRepeatLimit="marquee_forever"-->
+        <!--        android:singleLine="true"-->
+        <!--        android:text="@string/welcome"-->
+        <!--        android:textAlignment="center"-->
+        <!--        android:textColor="#031DA8"-->
+        <!--        android:textSize="30sp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/load"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Title" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingLeft="@dimen/headnewspadding"
+    android:paddingTop="@dimen/headnewspadding"
+    android:paddingRight="@dimen/headnewspadding"
+    android:paddingBottom="@dimen/headnewspadding"
+    android:background="@drawable/gnews"
+    tools:context=".views.fragments.mainNewsFragments.DetailsNewsFragment">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/bg"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg">
+
+            <TextView
+                android:id="@+id/tvNewsTitleDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/news_title"
+                android:textAlignment="center"
+                android:textColor="#F50303"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNewsDescriptionDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/news_description"
+                android:textColor="#090808"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/tvNewsTitleDetails"
+                app:layout_constraintStart_toStartOf="@id/tvNewsTitleDetails"
+                app:layout_constraintTop_toBottomOf="@id/tvNewsTitleDetails" />
+
+            <ImageView
+                android:id="@+id/imgNewsImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="22dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/load"
+                app:layout_constraintEnd_toEndOf="@id/tvNewsTitleDetails"
+                app:layout_constraintStart_toStartOf="@id/tvNewsTitleDetails"
+                app:layout_constraintTop_toBottomOf="@id/tvNewsDescriptionDetails" />
+
+            <TextView
+                android:id="@+id/tvWebsiteDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/go_to_news_in_web_site"
+                android:textColor="#0523CA"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/imgNewsImage"
+                app:layout_constraintStart_toStartOf="@id/imgNewsImage"
+                app:layout_constraintTop_toBottomOf="@id/imgNewsImage" />
+
+
+            <TextView
+                android:id="@+id/tvPublisherDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/websiteName"
+                android:textColor="#090808"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/tvWebsiteDetails"
+                app:layout_constraintStart_toStartOf="@id/tvWebsiteDetails"
+                app:layout_constraintTop_toBottomOf="@id/tvWebsiteDetails" />
+
+            <TextView
+                android:id="@+id/tvPublishDateDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/publishdate"
+                android:textColor="#090808"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/tvPublisherDetails"
+                app:layout_constraintStart_toStartOf="@id/tvPublisherDetails"
+                app:layout_constraintTop_toBottomOf="@id/tvPublisherDetails" />
+
+            <TextView
+                android:id="@+id/tv_no_internetdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_internet"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_adjust_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>
+

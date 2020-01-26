@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/action_enews"
+            android:icon="@drawable/ic_home"
+            android:title="@string/eNews" />
+        <item
+            android:id="@+id/action_back"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="@string/returnr" />
+        <item
+            android:id="@+id/action_signout"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/sign_out" />
+
+        <item
+            android:id="@+id/action_exit"
+            android:icon="@drawable/ic_close_black_24dp"
+            android:title="@string/exit" />
+    </group>
+</menu>
